@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/grey_200"
+
+        tools:context=".fragments.AddFragment">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@color/grey_200">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+            <TextView
+                    android:text="@string/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView5"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tilAddAdPrice" android:textSize="14sp"
+                    android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                    android:text="@string/tv_select_pic_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAddTitle" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" android:textSize="16sp" android:textColor="@color/colorAccent"/>
+            <TextView
+                    android:text="@string/tv_select_pic_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAddTip" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAddTitle" android:textSize="14sp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAddTip" android:layout_marginTop="8dp"
+                    android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:id="@+id/linearLayout"
+                    android:baselineAligned="false">
+
+                <com.balysv.materialripple.MaterialRippleLayout android:layout_width="0dp"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_weight="1"
+                                                                android:layout_margin="5dp"
+                                                                style="@style/RippleStyleBlack">
+
+
+                <ImageButton android:layout_width="match_parent" android:layout_height="70dp"
+                             android:background="@color/transparent"
+                             app:srcCompat="@drawable/add_img" android:scaleType="centerInside"
+                             android:id="@+id/imgAdd1"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout android:layout_width="0dp"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_weight="1"
+                                                                android:layout_margin="5dp"
+                                                                style="@style/RippleStyleBlack">
+
+                <ImageButton android:layout_width="match_parent" android:layout_height="70dp"
+
+                             android:background="@color/transparent"
+                             app:srcCompat="@drawable/add_img" android:scaleType="centerInside"
+                             android:id="@+id/imgAdd2"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout android:layout_width="0dp"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_weight="1"
+                                                                android:layout_margin="5dp"
+                                                                style="@style/RippleStyleBlack">
+                <ImageButton android:layout_width="match_parent" android:layout_height="70dp"
+
+                             android:background="@color/transparent"
+                             app:srcCompat="@drawable/add_img" android:scaleType="centerInside"
+                             android:id="@+id/imgAdd3"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+                <com.balysv.materialripple.MaterialRippleLayout android:layout_width="0dp"
+                                                                android:layout_height="wrap_content"
+                                                                android:layout_weight="1"
+                                                                android:layout_margin="5dp"
+                                                                style="@style/RippleStyleBlack">
+
+                <ImageButton android:layout_width="match_parent" android:layout_height="70dp"
+
+                             android:background="@color/transparent"
+                             app:srcCompat="@drawable/add_img" android:scaleType="centerInside"
+                             android:id="@+id/imgAdd4"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+
+            </LinearLayout>
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    app:ms_background_color="@color/grey_50"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/spinner"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp" android:id="@+id/tilAddAdName">
+
+                <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_ad_title"
+                        android:gravity="right"
+                        android:maxLength="40"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" android:textSize="14sp" android:id="@+id/etAddAdTitle"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tilAddAdDesc"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tilAddAdName"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+            >
+
+                <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_ad_description"
+                        android:gravity="right"
+                        android:maxLength="3000"
+                        android:inputType="textMultiLine"
+                        android:lines="3" android:textSize="14sp" android:id="@+id/etAddAdDesc"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" android:id="@+id/tilAddAdPrice"
+                    app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tilAddAdDesc">
+
+                <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_ad_price"
+                        android:gravity="right"
+                        android:maxLength="15"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" android:textSize="14sp" android:id="@+id/etAddAdPrice"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                    android:text="@string/hint_ad_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    app:layout_constraintBottom_toTopOf="@+id/spinner"
+                    android:layout_marginBottom="4dp" android:textSize="14sp" android:layout_marginStart="16dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                    android:text="دورود"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAddCityName"
+                    android:textSize="14sp" android:textColor="@android:color/black"
+                    android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/tilAddAdPrice"
+                    app:layout_constraintStart_toEndOf="@+id/textView5" android:layout_marginStart="8dp"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAddCityName" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingBottom="50dp"
+                    app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.6"
+                    android:layout_marginTop="24dp" android:background="@color/grey_200" android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                <TextView
+                        android:text="@string/tv_post_ad_consent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView7" android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="16dp" android:textColor="#071014" android:textSize="12sp"/>
+                <Button
+                        android:text="@string/btn_post_ad_text"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:id="@+id/btnPostAdd" android:layout_marginTop="32dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/btn_purple_a400"
+                        android:layout_marginStart="8dp" android:textColor="@color/white" android:textSize="16sp"
+                        android:layout_marginBottom="24dp" app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout
+        >
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

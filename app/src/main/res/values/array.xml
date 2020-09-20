@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--ad category data-->
+    <integer-array name="ad_category_icon">
+        <item>@drawable/ic_real_state</item>
+        <item>@drawable/ic_car</item>
+        <item>@drawable/ic_devices</item>
+        <item>@drawable/ic_lamp</item>
+        <item>@drawable/ic_painter</item>
+        <item>@drawable/ic_wristwatch</item>
+        <item>@drawable/ic_dices</item>
+        <item>@drawable/ic_social</item>
+        <item>@drawable/ic_business</item>
+        <item>@drawable/ic_bag</item>
+    </integer-array>
+
+</resources>
