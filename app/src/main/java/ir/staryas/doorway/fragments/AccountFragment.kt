@@ -17,8 +17,8 @@ import android.net.Uri
 import android.view.*
 import ir.staryas.doorway.BuildConfig
 import ir.staryas.doorway.R
-import ir.staryas.doorway.acticities.LoginActivity
-import ir.staryas.doorway.acticities.MainActivity
+import ir.staryas.doorway.activities.LoginActivity
+import ir.staryas.doorway.activities.MainActivity
 import ir.staryas.doorway.utils.TextViewEx
 import java.lang.Exception
 

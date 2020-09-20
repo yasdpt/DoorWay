@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ir.staryas.doorway.R
-import ir.staryas.doorway.acticities.AdDetailActivity
+import ir.staryas.doorway.activities.AdDetailActivity
 import ir.staryas.doorway.adapters.AdapterListAdsCat
 import ir.staryas.doorway.utils.PaginationScrollListener
 import ir.staryas.doorway.model.Ads

@@ -1,4 +1,4 @@
-package ir.staryas.doorway.acticities
+package ir.staryas.doorway.activities
 
 import android.content.Intent
 import android.os.Build

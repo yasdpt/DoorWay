@@ -17,17 +17,17 @@
             android:roundIcon="@mipmap/ic_logo_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".acticities.AdDetailActivity"
+        <activity android:name=".activities.AdDetailActivity"
                   android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-                android:name=".acticities.SearchActivity"
+                android:name=".activities.SearchActivity"
                 android:label="@string/title_activity_search"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-                android:name=".acticities.SplashActivity"
+                android:name=".activities.SplashActivity"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -36,17 +36,17 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".acticities.SignUpActivity"
+                android:name=".activities.SignUpActivity"
                 android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-                android:name=".acticities.LoginActivity"
+                android:name=".activities.LoginActivity"
                 android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-                android:name=".acticities.MainActivity"
+                android:name=".activities.MainActivity"
                 android:theme="@style/AppTheme.NoActionBar">
 
         </activity>

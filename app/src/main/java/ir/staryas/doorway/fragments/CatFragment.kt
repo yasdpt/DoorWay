@@ -18,7 +18,7 @@ import androidx.appcompat.widget.AppCompatButton
 import android.app.Dialog
 import android.view.*
 import ir.staryas.doorway.R
-import ir.staryas.doorway.acticities.MainActivity
+import ir.staryas.doorway.activities.MainActivity
 
 
 class CatFragment : Fragment() {

@@ -1,4 +1,4 @@
-package ir.staryas.doorway.acticities
+package ir.staryas.doorway.activities
 
 import android.app.Dialog
 import android.content.Context
@@ -14,7 +14,6 @@ import retrofit2.Response
 import android.net.NetworkInfo
 import android.content.Intent
 import android.net.ConnectivityManager
-import android.os.PatternMatcher
 import android.view.*
 import android.widget.*
 import androidx.appcompat.widget.AppCompatButton

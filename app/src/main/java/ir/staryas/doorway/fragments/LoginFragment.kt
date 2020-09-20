@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import ir.staryas.doorway.R
-import ir.staryas.doorway.acticities.LoginActivity
+import ir.staryas.doorway.activities.LoginActivity
 import kotlinx.android.synthetic.main.fragment_login.view.*
 
 

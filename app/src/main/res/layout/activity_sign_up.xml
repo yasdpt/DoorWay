@@ -5,7 +5,7 @@
               xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layoutDirection="rtl"
-              tools:context=".acticities.SignUpActivity">
+              tools:context=".activities.SignUpActivity">
 
     <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
